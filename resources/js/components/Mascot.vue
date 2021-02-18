@@ -1,5 +1,5 @@
 <template>
-<p>About</p>
+    <h1 class="text-3xl font-normal leading-none text-grey-darkest">Mascot</h1>
 </template>
 
 <script>

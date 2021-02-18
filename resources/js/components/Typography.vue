@@ -1,5 +1,5 @@
 <template>
-<p>Home</p>
+    <h1 class="text-3xl font-normal leading-none text-grey-darkest">Typography</h1>
 </template>
 
 <script>
