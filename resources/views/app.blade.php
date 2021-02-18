@@ -10,9 +10,8 @@
         <link rel="stylesheet" href="/css/app.css">
 
         <!-- Fonts -->
-        
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">  
         
         <!-- Styles -->
         <style>
@@ -27,30 +26,31 @@
     </head>
     <body class="font-sans">
         <div id="app">
-            <div class="container mx-auto">
-                <header class="py-6 mb-8">
+            <header class="px-8 py-8 mb-8" style="background: url('/images/splash.svg') no-repeat;">
+                <h1>
                     <img alt="Laracasts" src="/images/logo.svg">
-                </header>
-
+                </h1>
+            </header>
+            <div class="container px-8 pb-10">
                 <main class="flex">
-                    <aside class="w-1/5">
-                        <section class="mb-8">
-                            <h5 class="mb-4 font-bold uppercase">The Brand</h5>
+                    <aside class="pt-8 md:w-64">
+                        <section class="mb-10">
+                            <h5 class="mb-5 text-base font-bold uppercase">The Brand</h5>
                         <ul class="list-reset">
-                            <li class="text-sm leading-loose"><router-link class="text-black" :to="{ name: 'logo' }">Logo</router-link></li>
-                            <li class="text-sm leading-loose"><router-link class="text-black" :to="{ name: 'logosymbol' }">Logo Symbol</router-link></li>
-                            <li class="text-sm leading-loose"><router-link class="text-black" :to="{ name: 'colours' }">Colours</router-link></li>
-                            <li class="text-sm leading-loose"><router-link class="text-black" :to="{ name: 'typography' }">Typography</router-link></li>
+                            <li class="text-sm italic leading-loose"><router-link class="text-black" active-class="font-bold" :to="{ name: 'logo' }">Logo</router-link></li>
+                            <li class="text-sm italic leading-loose"><router-link class="text-black" active-class="font-bold" :to="{ name: 'logosymbol' }">Logo Symbol</router-link></li>
+                            <li class="text-sm italic leading-loose"><router-link class="text-black" active-class="font-bold" :to="{ name: 'colours' }">Colours</router-link></li>
+                            <li class="text-sm italic leading-loose"><router-link class="text-black" active-class="font-bold" :to="{ name: 'typography' }">Typography</router-link></li>
                         </ul>
                         </section>
                         
                         <section>
-                            <h5 class="mb-4 font-bold uppercase">Doodles</h5>
+                            <h5 class="mb-5 text-base font-bold uppercase">Doodles</h5>
                         <ul class="list-reset">
-                            <li class="text-sm leading-loose"><router-link class="text-black" :to="{ name: 'mascot' }">Mascot</router-link></li>
-                            <li class="text-sm leading-loose"><router-link class="text-black" :to="{ name: 'illustrations' }">Illustrations</router-link></li>
-                            <li class="text-sm leading-loose"><router-link class="text-black" :to="{ name: 'loadersandanimations' }">Loaders and Animations</router-link></li>
-                            <li class="text-sm leading-loose"><router-link class="text-black" :to="{ name: 'wallpapers' }">Wallpapers</router-link></li>
+                            <li class="text-sm italic leading-loose"><router-link class="text-black" active-class="font-bold" :to="{ name: 'mascot' }">Mascot</router-link></li>
+                            <li class="text-sm italic leading-loose"><router-link class="text-black" active-class="font-bold" :to="{ name: 'illustrations' }">Illustrations</router-link></li>
+                            <li class="text-sm italic leading-loose"><router-link class="text-black" active-class="font-bold" :to="{ name: 'loadersandanimations' }">Loaders and Animations</router-link></li>
+                            <li class="text-sm italic leading-loose"><router-link class="text-black" active-class="font-bold" :to="{ name: 'wallpapers' }">Wallpapers</router-link></li>
                         </ul>
                         </section>
                     </aside>
@@ -58,7 +58,6 @@
                         <router-view></router-view>
                     </div>
                 </main>
-                <hr>
             </div>
         </div>
 
